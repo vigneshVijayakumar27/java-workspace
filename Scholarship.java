@@ -1,9 +1,10 @@
 class sample
 {
+	int Addamo=5000;
    public void Mark(String name,int mark)
     {
 	int amount=15000;
-	int Addamo=5000;
+	
 	if(mark==50)
 	{
 	    System.out.println("Student Name = "+name);
@@ -29,7 +30,7 @@ class Scholarship
    public static void main(String arg[])
     {
 	sample vv=new sample();
-	vv.Mark("Manoj",51);
+	vv.Mark("Manoj",50);
     }
 }
 
