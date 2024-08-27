@@ -27,10 +27,6 @@ class eb
 	     int b=630;
 	     System.out.println("Your Amount is = "+((units-500)*8.40+a+b));
 	}
-	else if(units<800)
-	{
-	     int a=
-	}
     }
 }
 
