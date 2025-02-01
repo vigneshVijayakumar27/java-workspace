@@ -1,59 +1,65 @@
-import java.util.Scanner;
-import java.io.*;
-abstract class sample
+package Pack;
+
+import java.util.*;
+
+class samplee
 {
-    abstract public void Method(int Num5);
-}
-
-class sample2 extends sample
-{
-	DataInputStream ip2=new DataInputStream(System.in);
-	Scanner ip=new Scanner(System.in);
-	int Num1;
-	int Num2;
-	int Num3;
-	int Num4;
-    public void Method(int Num5)
-     {	
-	try{
-		System.out.println("Enter First Number : ");
-		int num1=ip.nextInt();
-
-		System.out.println("Enter Second Number : ");
-		int num2=ip.nextInt();
-
-		this.Num1=num1;
-		this.Num2=num2;
+	int mark1;
+	int mark2;
+	int mark3;
+	int mark4;
+	int mark5;
+	int mark6;
 	
-		System.out.println("Enter Third Number : ");
-		int num3=Integer.valueOf(ip.nextInt()).intValue();
-
-		System.out.println("Enter Forth Number :  ");
-		int num4=Integer.parseInt(ip2.readLine());
-
-		this.Num3=num3;
-		this.Num4=num4;
-
-     	   }catch(Exception e){}
-     }
-    public void Method2()
-     {
-	System.out.println("The First Value is : "+Num1);
-	System.out.println("The Second Value is : "+Num2);
-	System.out.println("The Third Value is : "+Num3);
-	System.out.println("The Forth Value is : "+Num4);
-     }
+	samplee(int mark1,int mark2,int mark3,int mark4,int mark5,int mark6)
+	{
+		this.mark1=mark1;
+		this.mark2=mark2;
+		this.mark3=mark3;
+		this.mark4=mark4;
+		this.mark5=mark5;
+		this.mark6=mark6;
+	}
+	public void Method()
+	{
+		int swp=0;
+		
+		swp=mark1;
+		mark1=mark6;
+		mark6=swp;
+		
+		swp=mark2;
+		mark2=mark5;
+		mark5=swp;
+		
+		swp=mark3;
+		mark3=mark4;
+		mark4=swp;
+		    System.out.println("- - - - - - -");
+			System.out.println(mark1);
+			System.out.println(mark2);
+			System.out.println(mark3);
+			System.out.println(mark4);
+			System.out.println(mark5);
+			System.out.println(mark6);
+			System.out.println("- - - - - - -");
+	}
 }
 
-class Swap
+
+class Swap2
 {
-    public static void main(String arg[])
-     {
-	Scanner ip3=new Scanner(System.in);
-	int Num5=ip3.nextInt();
-
-	sample2 vv=new sample2();
-	vv.Method(Num5);    
-	vv.Method2();
-     }
+	public static void main(String arg[])
+	{
+		Scanner ip=new Scanner(System.in);
+		int a=ip.nextInt();
+		int b=ip.nextInt();
+		int c=ip.nextInt();
+		int d=ip.nextInt();
+		int e=ip.nextInt();
+		int f=ip.nextInt();
+		samplee vv=new samplee();//a,b,c,d,e,f);
+		vv.Method();
+	}
 }
+
