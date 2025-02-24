@@ -22,6 +22,7 @@ class Files
 			System.out.print((char)i);
 		} 
 		
+		
 		FileOutputStream FO=new FileOutputStream("mydata.txt");
 		
 		String word2=ip.nextLine();
