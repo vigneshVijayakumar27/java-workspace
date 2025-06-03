@@ -3,15 +3,18 @@ class sample
 	sample()
 	{
 		Integer a=101;
-		int b=10;
+		int b=11;
+		/*
 		Boolean c=false;
 		System.out.println(a == b? "Ture":"False"); // Ternary Operators.
 		System.out.println(a instanceof Integer);	// Check Type
 		System.out.println((float)b);				// Type Convertion
 		System.out.println(a*'!');		// Assici value
-		System.out.println(!c);
+		System.out.println(!c); 		// Check ture or false	
+		*/
 		
-		// switch case 
+		/*
+// switch case 
 		switch(b)
 		{
 			case 10:
@@ -26,15 +29,17 @@ class sample
 			default:
 				System.out.println("Different\n");
 		}
+		*/
 		
-		// multiple conditions
+		/*
+// multiple conditions
 		for(int i=9,y=5;i>0&&y>0;i--,y--)
 		{
 			System.out.println(i);
 		}
 		System.out.println(" ");
 		
-		//  Array 
+//  Array 
 		String p[]=new String[3];
 		p[0]="Your";
 		p[1]="name";
@@ -42,7 +47,7 @@ class sample
 		
 		//int r[]={10,12,13};
 		
-		// loop object creations.
+// loop object creations.
 		for(String temp: p)
 		{
 			if(temp=="is")
@@ -51,7 +56,7 @@ class sample
 		}
 		System.out.println(" ");
 		
-		// creat object using continue statement.
+// creat object using continue statement.
 		lable:
 		for(String tree:p)
 		{
@@ -62,6 +67,18 @@ class sample
 				continue lable ;
 			}
 		}
+		*/
+	}
+	
+	public void Method(String name1,String name2)
+	{
+// Swaping...
+
+		var temp=name1;
+		name1=name2;
+		name2=temp;
+		System.out.println(name1);
+		System.out.println(name2)
 	}
 }
 
@@ -69,6 +86,8 @@ class VV
 {
 	public static void main(String arg[])
 	{
+		sample vv=new sample();
+		vv.Method("Priya","Rose");
 		new sample();
 	}
 }
